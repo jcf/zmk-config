@@ -134,12 +134,12 @@
 
         symbols_layer {
             bindings = <
-            &trans  &trans  &trans  &trans  &trans                                                                  &trans     &trans     &trans    &trans      &trans
-            &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans     &trans     &trans    &trans      &trans
-            &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp LPAR   &kp RPAR   &trans    &trans      &trans
-            &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp MINUS  &kp UNDER  &kp AMPS  &kp DOLLAR  &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LBRC   &kp RBRC   &trans    &trans      &trans
-            &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans     &trans     &trans    &trans      &trans
+            &trans  &trans  &trans  &trans  &trans                                                                      &trans     &trans     &trans    &trans  &trans
+            &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans      &trans     &trans     &trans    &trans  &trans
+            &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans      &kp LPAR   &kp RPAR   &trans    &trans  &trans
+            &trans  &trans  &trans  &trans  &trans  &trans                                                  &kp DOLLAR  &kp MINUS  &kp UNDER  &kp AMPS  &trans  &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &kp LBRC   &kp RBRC   &trans    &trans  &trans
+            &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans              &trans     &trans     &trans    &trans  &trans
             >;
         };
 
