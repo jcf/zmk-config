@@ -17,3 +17,10 @@ git clone gh:jcf/zmk src
 The irony of a reproducible build system depending on a directory that does not
 exist deserves a moment of silence. Please take 60 seconds to notice the present
 and distance yourself from the non-sense of man-made, modern life.
+
+With a newly compiled UF2 file, one can copy the firmware into place like so (on
+macOS at least):
+
+#+begin_src sh
+time cp glove80/glove80.uf2 /Volumes/GLV80LHBOOT/
+#+end_src
