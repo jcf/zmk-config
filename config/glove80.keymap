@@ -38,6 +38,16 @@
             tapping-term-ms = <200>;
             bindings = <&mo>, <&rgb_ug_status_macro>;
         };
+
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     macros {
@@ -94,7 +104,7 @@
             &kp F1          &kp F2    &kp F3      &kp F4       &kp F5                                                                                                 &kp F6       &kp F7       &kp F8          &kp F9    &kp F10
             &kp GRAVE       &kp N1    &kp N2      &kp N3       &kp N4       &kp N5                                                                            &kp N6  &kp N7       &kp N8       &kp N9          &kp N0    &kp MINUS
             &none           &kp Y     &kp C       &kp L        &kp M        &kp K                                                                             &kp Z   &kp F        &kp U        &kp COMMA       &kp SQT   &kp SEMI
-            &none           &kp I     &mt LALT S  &mt LSHFT R  &mt LCTRL T  &kp G                                                                             &kp P   &mt RCTRL N  &mt RSHFT E  &mt LALT A      &kp O     &kp EQUAL
+            &none           &kp I     &hm LALT S  &hm LSHFT R  &hm LCTRL T  &kp G                                                                             &kp P   &hm RCTRL N  &hm RSHFT E  &hm LALT A      &kp O     &kp EQUAL
             &none           &kp Q     &kp V       &kp W        &kp D        &kp J   &kp LGUI            &kp LCTRL  &layer_td  &kp LGUI  &kp RCTRL &kp RSHFT   &kp B   &kp H        &kp FSLH     &kp DOT         &kp X     &kp EXCL
             &magic MAGIC 0  &kp HOME  &kp END     &kp LEFT     &kp RIGHT            &lt SYMBOLS SPACE   &kp BKSP   &kp LALT   &kp RALT  &kp TAB   &kp RET             &kp UP       &kp DOWN     &kp LBKT        &kp RBKT  &kp PG_DN
             >;
