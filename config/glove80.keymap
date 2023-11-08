@@ -135,12 +135,12 @@
 
         symbols_layer {
             bindings = <
-            &trans  &trans  &trans  &trans  &trans                                                                            &trans    &trans    &trans    &trans     &trans
-            &trans  &trans  &trans  &trans  &trans  &trans                                                        &trans      &trans    &trans    &trans    &trans     &trans
-            &trans  &trans  &trans  &trans  &trans  &trans                                                        &kp CARET   &kp LBKT  &kp RBKT  &kp HASH  &kp SEMI   &trans
-            &trans  &trans  &trans  &trans  &trans  &trans                                                        &kp DOLLAR  &kp LPAR  &kp RPAR  &kp AMPS  &kp EXCL   &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &kp PLUS    &kp LBRC  &kp RBRC  &kp AT    &kp QMARK  &trans
-            &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &kp UNDER  &kp MINUS              &trans    &trans    &trans    &trans     &trans
+            &trans  &trans  &trans    &trans     &trans                                                                               &trans    &trans    &trans    &trans     &trans
+            &trans  &trans  &trans    &trans     &trans     &trans                                                        &trans      &trans    &trans    &trans    &trans     &trans
+            &trans  &trans  &trans    &trans     &trans     &trans                                                        &kp CARET   &kp LBKT  &kp RBKT  &kp HASH  &kp SEMI   &trans
+            &trans  &trans  &kp LALT  &kp LSHFT  &kp LCTRL  &trans                                                        &kp DOLLAR  &kp LPAR  &kp RPAR  &kp AMPS  &kp EXCL   &trans
+            &trans  &trans  &trans    &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans     &trans     &kp PLUS    &kp LBRC  &kp RBRC  &kp AT    &kp QMARK  &trans
+            &trans  &trans  &trans    &trans     &trans             &trans  &trans  &trans  &trans  &kp UNDER  &kp MINUS              &trans    &trans    &trans    &trans     &trans
             >;
         };
 
