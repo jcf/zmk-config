@@ -140,12 +140,12 @@
 
         nav_layer {
             bindings = <
-            &trans  &trans  &trans    &trans     &trans                                                                         &trans       &trans      &trans     &trans      &trans
-            &trans  &trans  &trans    &trans     &trans     &trans                                                  &trans      &trans       &trans      &trans     &trans      &trans
-            &trans  &trans  &trans    &kp MEH    &kp HYPER  &trans                                                  &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO  &trans
-            &trans  &trans  &kp LALT  &kp LSHFT  &kp LCTRL  &trans                                                  &trans      &kp LEFT     &kp DOWN    &kp UP     &kp RIGHT   &trans
-            &trans  &trans  &trans    &trans     &kp LGUI   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp HOME    &kp PG_DN    &kp HOME    &kp END    &kp PG_UP   &trans
-            &trans  &trans  &trans    &trans     &trans             &trans  &trans  &trans  &trans  &trans  &trans              &trans       &trans      &trans     &trans      &trans
+            &trans  &trans  &trans    &trans     &trans                                                                            &trans     &trans     &trans     &trans     &trans
+            &trans  &trans  &trans    &trans     &trans     &trans                                                  &trans         &trans     &trans     &trans     &trans     &trans
+            &trans  &trans  &trans    &kp MEH    &kp HYPER  &trans                                                  &kp LG(LS(Z))  &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp LG(Z)  &trans
+            &trans  &trans  &kp LALT  &kp LSHFT  &kp LCTRL  &trans                                                  &trans         &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &trans
+            &trans  &trans  &trans    &trans     &kp LGUI   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans         &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &trans
+            &trans  &trans  &trans    &trans     &trans             &trans  &trans  &trans  &trans  &trans  &trans                 &trans     &trans     &trans     &trans     &trans
             >;
         };
 
