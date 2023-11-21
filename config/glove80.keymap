@@ -21,8 +21,9 @@
 #define ZERO 0
 #define SYM 1
 #define NUM 2
-#define NAV 3
-#define MAGIC 4
+#define EVIL 3
+#define NAV 4
+#define MAGIC 5
 
 / {
     behaviors {
@@ -107,12 +108,12 @@
 
         default_layer {
             bindings = <
-            &kp F1          &kp F2    &kp F3      &kp F4       &kp F5                                                                                           &kp F6       &kp F7       &kp F8      &kp F9     &kp F10
-            &none           &kp N1    &kp N2      &kp N3       &kp N4       &kp N5                                                                      &kp N6  &kp N7       &kp N8       &kp N9      &kp N0     &none
-            &kp GRAVE       &kp Y     &kp C       &hm MEH L    &hm HYPER M  &kp K                                                                       &kp Z   &hm HYPER F  &hm MEH U    &kp COMMA   &kp SQT    &kp SEMI
-            &caps_word      &kp I     &hm LALT S  &hm LSHFT R  &hm LCTRL T  &kp G                                                                       &kp P   &hm RCTRL N  &hm RSHFT E  &hm LALT A  &kp O      &kp EQUAL
-            &none           &kp Q     &kp V       &kp W        &hm LGUI D   &kp J   &key_repeat     &kp LM(L)     &none  &none  &kp LM(M)  &kp ESC      &kp B   &hm RGUI H   &kp FSLH     &kp DOT     &kp X      &none
-            &magic MAGIC 0  &kp HOME  &kp END     &kp LEFT     &kp RIGHT            &lt SYM SPACE   &lt NAV BKSP  &none  &none  &kp TAB    &lt NUM RET          &kp UP       &kp DOWN     &none       &none      &kp PG_DN
+            &kp F1          &kp F2    &kp F3      &kp F4       &kp F5                                                                                              &kp F6       &kp F7       &kp F8      &kp F9     &kp F10
+            &none           &kp N1    &kp N2      &kp N3       &kp N4       &kp N5                                                                         &kp N6  &kp N7       &kp N8       &kp N9      &kp N0     &none
+            &kp GRAVE       &kp Y     &kp C       &hm MEH L    &hm HYPER M  &kp K                                                                          &kp Z   &hm HYPER F  &hm MEH U    &kp COMMA   &kp SQT    &kp SEMI
+            &caps_word      &kp I     &hm LALT S  &hm LSHFT R  &hm LCTRL T  &kp G                                                                          &kp P   &hm RCTRL N  &hm RSHFT E  &hm LALT A  &kp O      &kp EQUAL
+            &none           &kp Q     &kp V       &kp W        &hm LGUI D   &kp J   &key_repeat     &kp LM(L)     &none  &none  &kp LM(M)     &kp ESC      &kp B   &hm RGUI H   &kp FSLH     &kp DOT     &kp X      &none
+            &magic MAGIC 0  &kp HOME  &kp END     &kp LEFT     &kp RIGHT            &lt SYM SPACE   &lt NAV BKSP  &none  &none  &lt EVIL TAB  &lt NUM RET          &kp UP       &kp DOWN     &none       &none      &kp PG_DN
             >;
         };
 
@@ -135,6 +136,17 @@
             &trans  &kp SEMI   &kp N4  &kp N5  &kp N6  &kp EQUAL                                                      &trans  &kp RCTRL  &kp RSHFT  &kp LALT  &trans  &trans
             &trans  &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp BSLH   &trans  &trans   &trans     &trans  &trans  &trans  &trans  &trans     &trans     &trans    &trans  &trans
             &trans  &trans     &trans  &trans  &trans             &kp N0  &kp DOT  &kp MINUS  &trans  &trans  &trans          &trans     &trans     &trans    &trans  &trans
+            >;
+        };
+
+        evil_layer {
+            bindings = <
+            &trans  &trans  &trans  &trans     &trans                                                                        &trans     &trans     &trans    &trans  &trans
+            &trans  &trans  &trans  &trans     &trans    &trans                                                      &trans  &trans     &trans     &trans    &trans  &trans
+            &trans  &trans  &trans  &trans     &trans    &trans                                                      &trans  &trans     &trans     &trans    &trans  &trans
+            &trans  &trans  &trans  &kp GRAVE  &kp SEMI  &trans                                                      &trans  &kp RCTRL  &kp RSHFT  &kp LALT  &trans  &trans
+            &trans  &trans  &trans  &trans     &trans    &trans   &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans    &trans  &trans
+            &trans  &trans  &trans  &trans     &trans             &kp COLON  &trans  &trans  &trans  &trans  &trans          &trans     &trans     &trans    &trans  &trans
             >;
         };
 
