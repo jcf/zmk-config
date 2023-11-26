@@ -139,12 +139,12 @@
 
         default_layer {
             bindings = <
-            &kp F1          &kp F2      &kp F3      &kp F4       &kp F5                                                                                              &kp F6       &kp F7       &kp F8      &kp F9      &kp F10
-            &none           &kp N1      &kp N2      &kp N3       &kp N4       &kp N5                                                                         &kp N6  &kp N7       &kp N8       &kp N9      &kp N0      &none
-            &kp GRAVE       &kp Y       &kp C       &hm MEH L    &hm HYPER M  &kp K                                                                          &kp Z   &hm HYPER F  &hm MEH U    &kp COMMA   &kp SQT     &kp SEMI
-            &caps_word      &hm LGUI I  &hm LALT S  &hm LSHFT R  &hm LCTRL T  &kp G                                                                          &kp P   &hm RCTRL N  &hm RSHFT E  &hm LALT A  &hm RGUI O  &kp EQUAL
-            &none           &kp Q       &kp V       &kp W        &kp D        &kp J   &key_repeat     &kp LM(L)     &none  &none  &kp LM(M)     &kp ESC      &kp B   &kp H        &kp FSLH     &kp DOT     &kp X       &none
-            &magic MAGIC 0  &kp HOME    &kp END     &kp LEFT     &kp RIGHT            &lt SYM SPACE   &lt NAV BKSP  &none  &none  &lt EVIL TAB  &lt NUM RET          &kp UP       &kp DOWN     &none       &none       &kp PG_DN
+            &kp F1          &kp F2      &kp F3      &kp F4       &kp F5                                                                                                   &kp F6       &kp F7       &kp F8      &kp F9      &kp F10
+            &kp BSLH        &kp N1      &kp N2      &kp N3       &kp N4       &kp N5                                                                            &kp N6    &kp N7       &kp N8       &kp N9      &kp N0      &kp EQUAL
+            &kp GRAVE       &kp B       &kp Y       &hm MEH O    &hm HYPER U  &kp SQT                                                                           &kp SEMI  &hm HYPER L  &hm MEH D    &kp W       &kp V       &kp Z
+            &caps_word      &hm LGUI C  &hm LALT I  &hm LSHFT E  &hm LCTRL A  &kp COMMA                                                                         &kp DOT   &hm RCTRL H  &hm RSHFT T  &hm LALT S  &hm RGUI N  &kp Q
+            &none           &kp G       &kp X       &kp J        &kp K        &kp MINUS  &key_repeat     &kp LM(L)     &none  &none  &kp LM(M)     &kp ESC      &kp FSLH  &kp R        &kp M        &kp F       &kp P       &none
+            &magic MAGIC 0  &kp HOME    &kp PG_UP   &kp PG_DN    &kp END                 &lt SYM SPACE   &lt NAV BKSP  &none  &none  &lt EVIL TAB  &lt NUM RET            &none        &kp LBKT     &kp RBKT    &none       &none
             >;
         };
 
