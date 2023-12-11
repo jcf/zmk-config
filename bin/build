@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+IFS=$'\n\t'
+cd "${BASH_SOURCE%/*}/.."
+
+exec nix build -f config/default.nix -o glove80
